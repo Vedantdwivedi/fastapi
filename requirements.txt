@@ -1,2 +1,2 @@
 fastapi[all]
-google.generativeai
+google-generativeai
