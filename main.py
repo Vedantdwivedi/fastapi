@@ -8,6 +8,10 @@ load_dotenv()
 
 palm.configure(api_key=palm)
 
+models = [m for m in palm.list_models() if 'generateText' in m.supported_generation_methods]
+model = models[0].name
+
+
 prompt = """
 You are an expert at solving word problems.
 
