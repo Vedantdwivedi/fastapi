@@ -3,7 +3,7 @@ from typing import Optional
 from fastapi import FastAPI
 from dotenv import load_dotenv
 
-import google-generativeai as palm
+import google.generativeai as palm
 load_dotenv()
 
 palm.configure(api_key=palm)
